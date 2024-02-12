@@ -1,5 +1,9 @@
 project(static_use_static)
 
+# 设置动态库搜索路径为相对路径
+SET(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+SET(CMAKE_INSTALL_RPATH "\${ORIGIN}/${PROJECT_NAME}")
+
 add_library(is_prime
   STATIC
   ${CMAKE_SOURCE_DIR}/src/is_prime.cpp
