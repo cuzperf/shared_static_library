@@ -1,0 +1,1 @@
+# shared_static_library
